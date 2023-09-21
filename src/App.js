@@ -1,23 +1,29 @@
-import logo from './logo.svg';
+// src/App.js
+
+import React from 'react';
 import './App.css';
+import Navbar from './components/Navbar/Navbar.js';
+import ImageSlider from './components/ImageSlider/ImageSlider.js';
+import TextContent from './components/Text/TextComponent.js';
+import PhotoGallery from './components/PhotoGallery/PhotoGallery.js';
+import ODOPScheme from './components/ODOPScheme/ODOPScheme.js';
+import CardGrid from './components/CardGrid/CardGrid.js';
+import Footer from './components/Footer/Footer.js'; // Import the Footer component
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <ImageSlider />
+      <TextContent />
+      <PhotoGallery />
+      <ODOPScheme />
+      <CardGrid />
+    
+      <Footer /> {/* Include the Footer component */}
+      <div className="content">
+        {/* Your webpage content goes here */}
+      </div>
     </div>
   );
 }
